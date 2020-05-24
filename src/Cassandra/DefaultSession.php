@@ -48,7 +48,7 @@ final class DefaultSession implements Session {
      *
      * @return Rows A collection of rows.
      */
-    public function execute($statement, $options) { }
+    public function execute($statement, $options = null) { }
 
     /**
      * Execute a query asynchronously. This method returns immediately, but
@@ -92,13 +92,13 @@ final class DefaultSession implements Session {
     /**
      * Close the session and all its connections.
      *
-     * @param double $timeout The amount of time in seconds to wait for the session to close.
+     * @param double|null $timeout The amount of time in seconds to wait for the session to close.
      *
      * @throws Exception
      *
      * @return null Nothing.
      */
-    public function close($timeout) { }
+    public function close($timeout = null) { }
 
     /**
      * Asynchronously close the session and all its connections.
