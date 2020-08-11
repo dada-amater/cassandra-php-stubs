@@ -27,8 +27,8 @@ final class Timestamp implements Value {
      * Creates a new timestamp from either unix timestamp and microseconds or
      * from the current time by default.
      *
-     * @param int $seconds The number of seconds
-     * @param int $microseconds The number of microseconds
+     * @param int|null $seconds The number of seconds
+     * @param int|null $microseconds The number of microseconds
      */
     public function __construct($seconds = null, $microseconds = null) { }
 
