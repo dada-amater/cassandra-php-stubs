@@ -61,7 +61,7 @@ final class DefaultSession implements Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function executeAsync($statement, $options) { }
+    public function executeAsync($statement, $options = null) { }
 
     /**
      * Prepare a query for execution.
@@ -75,7 +75,7 @@ final class DefaultSession implements Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function prepare($cql, $options) { }
+    public function prepare($cql, $options = null) { }
 
     /**
      * Asynchronously prepare a query for execution.
@@ -87,7 +87,7 @@ final class DefaultSession implements Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function prepareAsync($cql, $options) { }
+    public function prepareAsync($cql, $options = null) { }
 
     /**
      * Close the session and all its connections.
